@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- style css  -->
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <div class="container background">
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <img
+            src="img/56f58c5bbae6320e1aa5d36445fd722b.jpg"
+            class="img-fluid mt-2"
+          />
+        </div>
+        <div class="col-md-6 mt-5">
+          <h2 class="mb-4">Create Account</h2>
+          <p class="mb-4 text-muted h5">
+            Go ahead and sign up, let everyone<br />know how awesome you are!
+            <p id="error"></p>
+          </p>
+          <form action="created.html" onsubmit="return isValid();">
+            <input type="text" name="un" id="un" class="form-control py-4 mb-4" placeholder="Username"/>
+            <input type="email" name="email" id="email" class="form-control py-4 mb-4" placeholder="E-Mail"/>
+            <input type="password" name="pass" id="pass" class="form-control py-4 mb-4" placeholder="Password"/>
+            <input type="password" name="confirm" id="confirm" class="form-control p-4 mb-4" placeholder="Confirm Password"/>
+            <input type="submit" class="form-control btn btn-primary" value="create new account ">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery js -->
+    <script src="js/jquery.slim.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
